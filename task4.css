@@ -1,0 +1,305 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+#top{
+    height: 80px;
+    width: 100%;
+    background-color: #fcbf49;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top h1{
+    font-size: 50px;
+    color: #003049; /* Dark Blue */
+}
+
+.outer{
+    height: 700px;
+    width: 1280px;
+    background-color: #eae2b7; /* Light Beige */
+    display: flex;
+}
+
+#inner1{
+    height: 700px;
+    width: 630px;
+    background-color: #fcbf49; /* Warm Yellow */
+}
+
+#innerAdder{
+    height: 630px;
+    width: 620px;
+    background-color: #eae2b7; /* Light Beige */
+    overflow: auto;
+    box-sizing: border-box;
+}
+#innerAdder::-webkit-scrollbar{
+    display:none;
+}
+
+#inner2{
+    height: 700px;
+    width: 650px;
+    background-color: #eae2b7; /* Light Beige */
+    display: block;
+}
+
+#inner2 h1{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #003049; /* Dark Blue */
+}
+
+#inner2 h3{
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    color: #d62828; /* Dark Red */
+}
+
+.buttons{
+    height: 60px;
+    width: 620px;
+    background-color: #f77f00; /* Vibrant Orange */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#que{
+    height: 30px;
+    width: 160px;
+    margin-right: 20px;
+    background-color: #003049; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 4px;
+}
+
+.search{
+    height: 30px;
+    width: 150px;
+    background-color: #003049; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+#subject{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    height: 30px;
+    width: 250px;
+    padding-left: 15px;
+    border: 1px solid #d62828; /* Dark Red */
+    border-radius: 4px;
+    color: #003049; /* Dark Blue */
+}
+
+#text1{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    padding-left: 15px;
+    border: 1px solid #d62828; /* Dark Red */
+    border-radius: 4px;
+}
+
+
+#submit2{
+    display: block;
+    height: 30px;
+    width: 90px;
+    margin-left: 480px;
+    background-color: #003049; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 4px;
+}
+
+/** div jo hum add krre question ke liye **/
+.a1
+{
+    height: 80px;
+    width: 620px;
+    background-color: #ffffff; /* White */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+/** para ki styling jo subject hai **/
+
+
+.para{
+    font-size: 33px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    color: #003049; /* Dark Blue */
+}
+
+/** para1 ki styling jo question ki class h **/
+
+.para1{
+    font-size: 24px;
+    margin-left: 20px;
+    color: #666666; /* Grey */
+}
+
+
+/** responseDiv  **/
+
+
+.responseDiv{
+    height: 700px;
+    width: 650px;
+    background-color: #eae2b7; /* Light Beige */
+    display: none;
+}
+
+.responseDiv h1{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #003049; /* Dark Blue */
+}
+
+#hide{
+    display: none;
+}
+
+#queR{
+    height: 80px;
+    width: 580px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    overflow: auto;
+    background-color: #ffffff; /* White */
+}
+
+#queR1{
+    font-size: 33px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #003049; /* Dark Blue */
+}
+
+#paraR{
+    font-size: 24px;
+    margin-left: 20px;
+    color: #666666; /* Grey */
+}
+
+#resolve{
+    display: block;
+    height: 30px;
+    width: 90px;
+    margin-left: 520px;
+    background-color: #d62828; /* Dark Red */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 4px;
+}
+
+/** comment**/
+.ansR{
+    height: 100px;
+    width: 580px;
+    background-color: #ffffff; /* White */
+    margin-bottom: 10px;
+    margin-left: 30px;
+    overflow: auto;
+    display: none;
+}
+
+#nameR{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    height: 30px;
+    width: 250px;
+    padding-left: 15px;
+    border: 1px solid #d62828; /* Dark Red */
+    border-radius: 4px;
+    color: #003049; /* Dark Blue */
+}
+
+#commentR{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    padding-left: 15px;
+    border: 1px solid #d62828; /* Dark Red */
+    border-radius: 4px;
+}
+
+#submitR{
+    display: block;
+    height: 30px;
+    width: 90px;
+    margin-left: 500px;
+    background-color: #003049; /* Dark Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 4px;
+}
+
+#listR{
+    list-style: none;
+    padding-left: 1%;
+}
+
+#itemR{
+    box-sizing: border-box;
+    background-color: #fcbf49; /* Warm Yellow */
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+#ansRH{
+    font-size: 33px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #003049; /* Dark Blue */
+}
+
+#ansRP{
+    font-size: 24px;
+    margin-left: 20px;
+    color: #666666; /* Grey */
+}
+
+.buttons1{
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid white;
+}
+.like , .dislike{
+    margin: 10px 10px 10px 10px;
+}
+.like , .dislike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.likeCount , .dislikeCount{
+    margin-left: 8px;
+}
+.likeCount , .dislikeCount{
+    font-size: 22px;
+}
+#star_icon{
+    position: absolute;
+    left: 240px;
+    top: 20px;
+}

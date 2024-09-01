@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Portal</title>
+    <link rel="stylesheet" type="text/css" href="task4.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="top">
+        <h1>Dicussion Portal</h1>
+    </div>
+    <div class="outer">
+        <div id ="inner1">
+            <div class="buttons">
+                <button id ="que">New Question</button>
+                <input type="text" placeholder="Search queries...." class="search"/>
+            </div>
+            <div id="innerAdder"></div>
+            
+        </div>
+        <div id ="inner2">
+            <h1>Welcome to Discussion Portal !</h1>
+            <h3 >Enter a subject and question to get started</h3>
+                <input type="text" placeholder="Enter Subject..." id="subject"/>
+                <textarea  id="text1" rows="18" cols="75" placeholder="Enter question..."></textarea>
+                <button type="submit" value="submit" id="submit2">Submit</button>
+
+        </div>
+
+        <div class="responseDiv">
+            <h1>Question</h1>
+            <div id ="queR">
+                <h2 id="queR1"></h2>
+                <p id="paraR"></p>
+            </div>
+            <button type="button" id = "resolve"  >Resolve</button>
+            <h1 id = "hide" >Response</h1>
+            <div class="ansR">
+                <ul id = "listR"></ul>
+            </div>
+            <h1 id = "headR" >Add Response</h1>
+            <input id="nameR" type="text" placeholder="Enter name"/>
+            <textarea id="commentR" placeholder="Enter Comment" rows="7" cols="80"></textarea>
+            <button type="submit" id="submitR">Submit</button>
+        </div>
+    </div>
+    <!--Adding script-->
+    <script src="task4.js"></script>
+</body>
+</html>
