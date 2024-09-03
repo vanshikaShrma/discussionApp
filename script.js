@@ -224,7 +224,7 @@ function add_likeDislike(itemR , obj1 , arr){
     const item1 = document.createElement('i');
     item1.classList.add("fa-regular" , "fa-thumbs-up");
     div2.appendChild(item1);
-    item1.setAttribute("id" , "like");
+    // item1.setAttribute("id" , "like");
 
     const item2 = document.createElement('p');
     item2.classList.add("likeCount");
@@ -236,9 +236,9 @@ function add_likeDislike(itemR , obj1 , arr){
     div1.appendChild(div3);
 
     const item4 = document.createElement('i');
-    item4.classList.add("fa-regular" , "fa-thumbs-up");
+    item4.classList.add("fa-regular" , "fa-thumbs-down");
     div3.appendChild(item4);
-    item4.setAttribute("id" , "dislike");
+    // item4.setAttribute("id" , "dislike");
 
     const item5 = document.createElement('p');
     item5.classList.add("dislikeCount");
@@ -246,9 +246,10 @@ function add_likeDislike(itemR , obj1 , arr){
     div3.appendChild(item5);
 
 
-    item1.addEventListener("click" , ()=>{
-        item1.style.color = "blue";
-        item4.style.color = "black";
+    item1.addEventListener("click" , (event)=>{
+        event.stopPropagation();
+        // item1.style.color = "red";
+        // item4.style.color = "black";
         item2.innerText = parseInt(item2.innerText)+1;
         //count1 = item2.innerText;
 
@@ -260,8 +261,9 @@ function add_likeDislike(itemR , obj1 , arr){
         
     })
 
-    item4.addEventListener("click" , ()=>{
-        item4.style.color = "blue";
+    item4.addEventListener("click" , (event)=>{
+        event.stopPropagation();
+        item4.style.color = "red";
         item1.style.color = "black";
         item5.innerText = parseInt(item5.innerText)+1;
         //count1 = item2.innerText;
